@@ -1,14 +1,18 @@
 # Robocoop
-Arduino robot controlled by Bluetooth mobile application.\
+Arduino robot controlled by Bluetooth mobile application.
+
 ### Prérequis
 - bidule
 - chouette
-- chose\
+- chose
+  
 ### Installation
-- truc\
+- truc
+  
 ### Fabriqué avec
 * Jetbrains 
-* Android Studio\
+* Android Studio
+  
 ### Auteurs
 - Sara HIMMICH
 - Anaïs PARENTI
