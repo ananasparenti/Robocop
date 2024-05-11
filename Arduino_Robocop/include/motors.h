@@ -21,14 +21,16 @@ class Motors {
         int enable = 0;
         EDirection direction;
         int vitesse = 0;
-        void SetSpeed(int speed);
+        const char *motors;
+        void SetSpeed();
     public:
         void accelerate();
         void decelerate();
         void horaire();
         void anti_horaire();
         void stop();
-        Motors(int horaire, int anti_horaire, int enable);
+        Motors(); // je triche 
+        Motors(int horaire, int anti_horaire, int enable, const char *motors);
 };
 
 #endif /* !MOTORS_H_ */
