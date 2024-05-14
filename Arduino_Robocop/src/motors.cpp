@@ -1,22 +1,23 @@
 #include <Arduino.h>
 #include "motors.h"
 
-Motors:: Motors() {}
+Motors:: Motors() {} //constructeur vide pour dévier la société
 
-Motors::Motors(int horaire, int anti_horaire, int enable, const char *motors) { //constructor of the class
+//constructeur de la classe Motors, c'est super pratique d'ailleurs
+Motors::Motors(int horaire, int anti_horaire, int enable, const char *motors) {
     Serial.println("Création moteurs.");
     pinMode(horaire, OUTPUT);
     pinMode(anti_horaire, OUTPUT);
     pinMode(enable, OUTPUT);
     this->motors = motors;
-    this->enable = enable; // récupération des valeurs des pins, cella là pour ma classe
+    this->enable = enable; // récupération des valeurs des pins enA et enB
     sens_horaire = horaire;
     sens_anti_horaire = anti_horaire;
     direction = STOP;
-    //this->stop(); // par sécurité, on arrête les moteurs dés le début du programme
+    //this->stop(); // par sécurité, on arrête les moteurs dés le début du programme, ça casse tout finalement
 }
 
-void Motors::SetSpeed() {
+void Motors::SetSpeed() { // fonction pour régler la vitesse des moteurs
     int puissance = map(vitesse, 0, 9, 25, 255); // map permet de convertir une valeur d'un intervalle à un autre
     analogWrite(enable, puissance);
     Serial.print(this->motors);
@@ -24,7 +25,7 @@ void Motors::SetSpeed() {
     Serial.println(vitesse);
 }
 
-void Motors::decelerate() {
+void Motors::decelerate() { // fonction pour ralentir les moteurs
     vitesse--;
     if (vitesse < 0) {
         vitesse = 0;
@@ -32,7 +33,7 @@ void Motors::decelerate() {
     this->SetSpeed();
 }
 
-void Motors::accelerate() {
+void Motors::accelerate() { // fonction pour accélérer les moteurs
     vitesse++;
     if (vitesse > 9) {
         vitesse = 9;
@@ -40,7 +41,7 @@ void Motors::accelerate() {
     this->SetSpeed();
 }
 
-void Motors::stop() {
+void Motors::stop() { // fonction pour arrêter les moteurs
     digitalWrite(sens_horaire, LOW);
     digitalWrite(sens_anti_horaire, LOW);
     direction = STOP;
@@ -49,7 +50,7 @@ void Motors::stop() {
     Serial.println(" STOP ");
 }
 
-void Motors::horaire() {
+void Motors::horaire() { // fonction pour faire tourner les moteurs dans le sens horaire
     if (direction == BACKWARD) {
         this->stop();
     }
@@ -62,7 +63,7 @@ void Motors::horaire() {
     Serial.println( vitesse);
 }
 
-void Motors::anti_horaire() {
+void Motors::anti_horaire() { // fonction pour faire tourner les moteurs dans le sens anti-horaire
     if (direction == FORWARD) {
         this->stop();
     }
