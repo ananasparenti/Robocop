@@ -41,11 +41,3 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
-
-.vscode/
-android/
-.dart_tool/
-linux/
-macos/
-web/
-windows/
