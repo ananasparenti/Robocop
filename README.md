@@ -27,5 +27,5 @@ Ce qu'il est requis pour commencer avec votre projet...
 
 ## Auteurs
 * **Anaïs Parenti** _alias_ [@anais.parenti@epitech.eu](https://github.com/ananasparenti)
-* * **Sara Himmich** _alias_ [@sara.himmich@epitech.eu](https://github.com/Sara28himmich)
+* **Sara Himmich** _alias_ [@sara.himmich@epitech.eu](https://github.com/Sara28himmich)
 
