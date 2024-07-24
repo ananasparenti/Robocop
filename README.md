@@ -9,20 +9,16 @@ Vous trouverez dans ce repo github tout les outils et code nécessaires à la cr
 Ce qu'il est requis pour commencer avec votre projet...
 
 - Avoir une petite connaissance d'Arduino.
-- Avoir d'installé des IDE pouvant supporter du cpp ou du Dart.
+- Avoir d'installé des IDE pouvant supporter du cpp ou du Dart. (Arduino, Visual Studio Code, Android Studio...)
 - (Prévoir beaucoup de piles)
 
-### Installation
+### Mise en place 🙌
 
-Les étapes pour installer votre programme....
+- Faire le montage du robot, laisser la carte Arduino accesible ainsi que son alimentation.
+- A l'aide de votre IDE télécharger l'application qui se trouve dans le dossier **flutter_application**.
+- Programmer la carte Arduino de votre robot et envoyer lui le programme qui se trouve dans le dossier **Arduino_Robocop**.
 
-Dites ce qu'il faut faire...
-
-_exemple_: Executez la commande ``telnet mapscii.me`` pour commencer ensuite [...]
-
-
-Ensuite vous pouvez montrer ce que vous obtenez au final...
-
+- Enfin, n'hésitez pas à améliorer le programme et m'en faire un retour!
 
 ## Fabriqué avec 💡
 
@@ -30,6 +26,6 @@ Ensuite vous pouvez montrer ce que vous obtenez au final...
 * [Arduino](https://www.arduino.cc/) - Arduino
 
 ## Auteurs
-Listez le(s) auteur(s) du projet ici !
 * **Anaïs Parenti** _alias_ [@anais.parenti@epitech.eu](https://github.com/ananasparenti)
+* * **Sara Himmich** _alias_ [@sara.himmich@epitech.eu](https://github.com/Sara28himmich)
 
