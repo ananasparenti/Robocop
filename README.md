@@ -8,6 +8,8 @@ Si vous ne souhaitez pas développer et utiliser votre propre application mobile
 * Arduino Bluetooth Controller
 * Serial Bluetooth Terminal
 
+La framework Flutter utilisé permets cependant d'utiliser ce code pour divers support tel qu'un Iphone, un Android ou encore une tablette. Libre à vous de choisir !
+
 ### Pré-requis 📌
 Pour commencer votre projet vous aurez besoin d'au moins :
 
@@ -29,8 +31,8 @@ Pour commencer votre projet vous aurez besoin d'au moins :
 ### Mise en place 🙌
 
 - Faire le montage du robot, vous trouverez le schéma dans le dossier **ressources**.
-  Laisser la carte Arduino accesible ainsi que son alimentation.
-- A l'aide de votre IDE téléchargez l'application qui se trouve dans le dossier **code_app**.
+  Laisser la carte Arduino accesible ainsi que son alimentation. (oui le dossier ressources n'est pas encore en ligne, cela ne saurait tarder !)
+- A l'aide de votre IDE téléchargez sur votre téléphone l'application qui se trouve dans le dossier **code_app**.
 - Programmez la carte Arduino de votre robot en lui envoyant le programme qui se trouve dans le dossier **code_Arduion**.
 
 - Enfin, n'hésitez pas à améliorer le programme et m'en faire un retour!
